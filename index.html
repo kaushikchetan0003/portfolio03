@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hangman Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <h1>🎯 Hangman Game</h1>
+        <div id="gameContainer">
+            <h3 id="hintDisplay"></h3> <!-- This will show the hint/question -->
+        </div>
+        <div id="wordDisplay" class="word"></div>
+
+        <canvas id="hangmanCanvas" width="200" height="250" style="border:2px solid #000000; background-image: url(smallbg.jpg); background-repeat: no-repeat; background-size: cover;"></canvas>
+
+        <div id="wrongLetters" class="wrong-letters"></div>
+
+
+        <div class="input-section">
+            <input type="text" id="letterInput" maxlength="1" placeholder="Enter a letter" autofocus>
+            <button onclick="guessLetter()">Guess</button>
+        </div>
+
+        <div class="info">
+            <p id="message"></p>
+            <p id="timer">⏳ Time Left: 60s</p>
+            <p id="score">🏆 Score: 0</p>
+        </div>
+
+        <div class="controls">
+            <button onclick="startGame()">🔄 New Game</button>
+            <button onclick="toggleDarkMode()">🌓 Toggle Dark Mode</button>
+        </div>
+       
+        
+
+
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,65 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background-image: url(bgimg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    transition: background 0.3s, color 0.3s;
+}
+
+.container {
+    padding: 20px;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.word {
+    font-size: 2rem;
+    letter-spacing: 10px;
+    margin-bottom: 20px;
+}
+
+.wrong-letters {
+    color: red;
+    margin-bottom: 20px;
+}
+
+.input-section {
+    margin-bottom: 20px;
+}
+
+.input-section input {
+    padding: 10px;
+    font-size: 16px;
+    width: 150px;
+    border-radius: 10px;
+}
+
+.input-section button {
+    padding: 10px 20px;
+    font-size: 16px;
+    margin-left: 10px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.info {
+    margin-bottom: 20px;
+}
+
+.controls button {
+    margin: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 10px;
+}
+
+.dark-mode {
+    background-image: url(darkbgimg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #ffffff;
+}
